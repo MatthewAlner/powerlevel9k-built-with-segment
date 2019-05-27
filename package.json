@@ -1,0 +1,18 @@
+{
+  "name": "temp_get_package_names",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "grunt": "^1.0.4",
+    "gulp": "^4.0.2",
+    "typescript": "^3.4.5",
+    "vue": "^2.6.10"
+  },
+  "devDependencies": {
+    "webpack": "^4.32.2"
+  },
+  "scripts": {
+    "start": "source ./built-with-segment.sh && zsh_built_with"
+  }
+}
