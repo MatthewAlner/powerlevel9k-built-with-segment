@@ -17,7 +17,7 @@ built_with() {
 
     for row in $(jq < built-with-config.json -r '.[] | @base64'); do
         _jq() {
-            echo ${row} | base64 --decode | jq -r ${1}
+            echo "${row}" | base64 --decode | jq -r "${1}"
         }
 
         built_with_check_package_json "$(_jq '.name')" "$(_jq '.icon')"
