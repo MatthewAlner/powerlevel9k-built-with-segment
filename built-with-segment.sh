@@ -20,7 +20,12 @@ built_with() {
             echo "${row}" | base64 --decode | jq -r "${1}"
         }
 
-        built_with_check_package_json "$(_jq '.packageJSONKey')" "$(_jq '.icon')" "$(_jq '.showIcon')" "$(_jq '.showVersion')"
+        if [ "$(echo "${row}" | base64 --decode | jq 'has("packageJSONKey")')" = 'true' ]; then 
+            built_with_check_package_json "$(_jq '.packageJSONKey')" "$(_jq '.icon')" "$(_jq '.showIcon')" "$(_jq '.showVersion')"
+        fi
+        if [ "$(echo "${row}" | base64 --decode | jq 'has("fileToCheckFor")')" = 'true' ]; then 
+            built_with_check_for_existance_of_file "$(_jq '.fileToCheckFor')" "$(_jq '.icon')" "$(_jq '.showIcon')" "$(_jq '.showVersion')"
+        fi
     done
 
     echo "$OUTPUT"
@@ -32,8 +37,21 @@ built_with_check_package_json() {
     local showIcon=${3}
     local showVersion=${4}
 
-    if [ "$(echo "$ALL_DEPS" | jq --arg KEY "$keyToCheck" 'has($KEY)')" = 'true' ];
-        then 
+    if [ "$(echo "$ALL_DEPS" | jq --arg KEY "$keyToCheck" 'has($KEY)')" = 'true' ]; then
+            local versionNumber
+            versionNumber="$(echo "$ALL_DEPS" | jq --arg KEY "$keyToCheck" '.[$KEY'] | tr -d '"')"
+            if [ "$showIcon" = 'true' ]; then OUTPUT="$OUTPUT $icon"; fi
+            if [ "$showVersion" = 'true' ]; then OUTPUT="$OUTPUT $versionNumber"; fi
+    fi
+}
+
+built_with_check_for_existance_of_file() {
+    local fileToCheck=${1}
+    local icon=${2}
+    local showIcon=${3}
+    local showVersion=${4}
+
+    if [ -f "$fileToCheck" ]; then
             local versionNumber
             versionNumber="$(echo "$ALL_DEPS" | jq --arg KEY "$keyToCheck" '.[$KEY'] | tr -d '"')"
             if [ "$showIcon" = 'true' ]; then OUTPUT="$OUTPUT $icon"; fi

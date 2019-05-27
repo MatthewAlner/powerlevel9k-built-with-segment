@@ -5,9 +5,7 @@
     "showIcon": true,
     "showVersion": true,
     "icon": "\ufbb0",
-    "packageJSONKey": "@angular/core",
-    "fileToCheckFor": "blarg.txt",
-    "grepFileFor": null
+    "packageJSONKey": "@angular/core"
   },
   {
     "name": "typescript",
@@ -15,9 +13,7 @@
     "showIcon": true,
     "showVersion": false,
     "icon": "\ue628",
-    "packageJSONKey": "typescript",
-    "fileToCheckFor": "blarg.txt",
-    "grepFileFor": null
+    "packageJSONKey": "typescript"
   },
   {
     "name": "grunt",
@@ -25,9 +21,7 @@
     "showIcon": true,
     "showVersion": false,
     "icon": "\ue611",
-    "packageJSONKey": "grunt",
-    "fileToCheckFor": "blarg.txt",
-    "grepFileFor": null
+    "packageJSONKey": "grunt"
   },
   {
     "name": "gulp",
@@ -35,9 +29,7 @@
     "showIcon": true,
     "showVersion": false,
     "icon": "\ue610",
-    "packageJSONKey": "gulp",
-    "fileToCheckFor": "blarg.txt",
-    "grepFileFor": null
+    "packageJSONKey": "gulp"
   },
   {
     "name": "react",
@@ -45,9 +37,7 @@
     "showIcon": true,
     "showVersion": false,
     "icon": "\ue625",
-    "packageJSONKey": "react",
-    "fileToCheckFor": "blarg.txt",
-    "grepFileFor": null
+    "packageJSONKey": "react"
   },
   {
     "name": "vue",
@@ -55,9 +45,7 @@
     "showIcon": true,
     "showVersion": false,
     "icon": "\ufd42",
-    "packageJSONKey": "vue",
-    "fileToCheckFor": "blarg.txt",
-    "grepFileFor": null
+    "packageJSONKey": "vue"
   },
   {
     "name": "webpack",
@@ -65,8 +53,14 @@
     "showIcon": true,
     "showVersion": false,
     "icon": "\ufc29",
-    "packageJSONKey": "webpack",
-    "fileToCheckFor": "blarg.txt",
-    "grepFileFor": null
+    "packageJSONKey": "webpack"
+  },
+  {
+    "name": "docker",
+    "type": "library",
+    "showIcon": true,
+    "showVersion": false,
+    "icon": "\uf308",
+    "fileToCheckFor": "docker-compose.yml"
   }
 ]
