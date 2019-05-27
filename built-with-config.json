@@ -2,71 +2,71 @@
   {
     "name": "angular",
     "type": "framework",
-    "show_icon": true,
-    "show_version": true,
+    "showIcon": true,
+    "showVersion": true,
     "icon": "\ufbb0",
-    "package_json_key": "@angular/core",
-    "file_to_check_for": "blarg.txt",
-    "grep_file_for": null
+    "packageJSONKey": "@angular/core",
+    "fileToCheckFor": "blarg.txt",
+    "grepFileFor": null
   },
   {
     "name": "typescript",
     "type": "language",
-    "show_icon": true,
-    "show_version": true,
+    "showIcon": true,
+    "showVersion": true,
     "icon": "\ue628",
-    "package_json_key": "typescript",
-    "file_to_check_for": "blarg.txt",
-    "grep_file_for": null
+    "packageJSONKey": "typescript",
+    "fileToCheckFor": "blarg.txt",
+    "grepFileFor": null
   },
   {
     "name": "grunt",
     "type": "library",
-    "show_icon": true,
-    "show_version": true,
+    "showIcon": true,
+    "showVersion": true,
     "icon": "\ue611",
-    "package_json_key": "grunt",
-    "file_to_check_for": "blarg.txt",
-    "grep_file_for": null
+    "packageJSONKey": "grunt",
+    "fileToCheckFor": "blarg.txt",
+    "grepFileFor": null
   },
   {
     "name": "gulp",
     "type": "library",
-    "show_icon": true,
-    "show_version": true,
+    "showIcon": true,
+    "showVersion": true,
     "icon": "\ue610",
-    "package_json_key": "gulp",
-    "file_to_check_for": "blarg.txt",
-    "grep_file_for": null
+    "packageJSONKey": "gulp",
+    "fileToCheckFor": "blarg.txt",
+    "grepFileFor": null
   },
   {
     "name": "react",
     "type": "framework",
-    "show_icon": true,
-    "show_version": true,
+    "showIcon": true,
+    "showVersion": true,
     "icon": "\ue625",
-    "package_json_key": "react",
-    "file_to_check_for": "blarg.txt",
-    "grep_file_for": null
+    "packageJSONKey": "react",
+    "fileToCheckFor": "blarg.txt",
+    "grepFileFor": null
   },
   {
     "name": "vue",
     "type": "framework",
-    "show_icon": true,
-    "show_version": true,
+    "showIcon": true,
+    "showVersion": true,
     "icon": "\ufd42",
-    "package_json_key": "vue",
-    "file_to_check_for": "blarg.txt",
-    "grep_file_for": null
+    "packageJSONKey": "vue",
+    "fileToCheckFor": "blarg.txt",
+    "grepFileFor": null
   },
   {
     "name": "webpack",
     "type": "library",
-    "show_icon": true,
-    "show_version": true,
+    "showIcon": true,
+    "showVersion": true,
     "icon": "\ufc29",
-    "package_json_key": "webpack",
-    "file_to_check_for": "blarg.txt",
-    "grep_file_for": null
+    "packageJSONKey": "webpack",
+    "fileToCheckFor": "blarg.txt",
+    "grepFileFor": null
   }
 ]

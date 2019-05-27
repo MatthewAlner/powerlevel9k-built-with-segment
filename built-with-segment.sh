@@ -20,7 +20,7 @@ built_with() {
             echo "${row}" | base64 --decode | jq -r "${1}"
         }
 
-        built_with_check_package_json "$(_jq '.name')" "$(_jq '.icon')"
+        built_with_check_package_json "$(_jq '.packageJSONKey')" "$(_jq '.icon')"
     done
 
     echo "$OUTPUT"
@@ -29,5 +29,5 @@ built_with() {
 built_with_check_package_json() {
     local keyToCheck=${1}
     local icon=${2}
-    if [ "$(echo "$ALL_DEPS" | jq --arg KE "$keyToCheck" 'has($KE)')" = 'true' ]; then OUTPUT="$OUTPUT $icon"; fi
+    if [ "$(echo "$ALL_DEPS" | jq --arg KEY "$keyToCheck" 'has($KEY)')" = 'true' ]; then OUTPUT="$OUTPUT $icon"; fi
 }
