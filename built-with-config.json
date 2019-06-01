@@ -1,35 +1,52 @@
 [
   {
-    "name": "angular",
-    "type": "framework",
-    "showIcon": true,
-    "showVersion": true,
-    "icon": "\ufbb0",
-    "packageJSONKey": "@angular/core"
-  },
-  {
     "name": "typescript",
     "type": "language",
     "showIcon": true,
     "showVersion": false,
     "icon": "\ue628",
-    "packageJSONKey": "typescript"
+    "keyExists": "typescript"
+  },
+  {
+    "name": "javascript",
+    "type": "language",
+    "showIcon": true,
+    "showVersion": false,
+    "icon": "\ue781",
+    "fileExists": "package.json",
+    "keyAbsent": "typescript"
+  },
+  {
+    "name": "angular",
+    "type": "framework",
+    "showIcon": true,
+    "showVersion": true,
+    "icon": "\ufbb0",
+    "keyExists": "@angular/core"
   },
   {
     "name": "grunt",
-    "type": "library",
+    "type": "build_tool",
     "showIcon": true,
     "showVersion": false,
     "icon": "\ue611",
-    "packageJSONKey": "grunt"
+    "keyExists": "grunt"
   },
   {
     "name": "gulp",
-    "type": "library",
+    "type": "build_tool",
     "showIcon": true,
     "showVersion": false,
     "icon": "\ue610",
-    "packageJSONKey": "gulp"
+    "keyExists": "gulp"
+  },
+  {
+    "name": "bower",
+    "type": "build_tool",
+    "showIcon": true,
+    "showVersion": false,
+    "icon": "\ue61a",
+    "keyExists": "bower"
   },
   {
     "name": "react",
@@ -37,7 +54,7 @@
     "showIcon": true,
     "showVersion": false,
     "icon": "\ue625",
-    "packageJSONKey": "react"
+    "keyExists": "react"
   },
   {
     "name": "vue",
@@ -45,22 +62,30 @@
     "showIcon": true,
     "showVersion": false,
     "icon": "\ufd42",
-    "packageJSONKey": "vue"
+    "keyExists": "vue"
   },
   {
     "name": "webpack",
-    "type": "library",
+    "type": "build_tool",
     "showIcon": true,
     "showVersion": false,
     "icon": "\ufc29",
-    "packageJSONKey": "webpack"
+    "keyExists": "webpack"
   },
   {
     "name": "docker",
-    "type": "library",
+    "type": "build_tool",
     "showIcon": true,
     "showVersion": false,
     "icon": "\uf308",
-    "fileToCheckFor": "docker-compose.yml"
+    "fileExists": "docker-compose.yml"
+  },
+  {
+    "name": "jQuery",
+    "type": "library",
+    "showIcon": true,
+    "showVersion": false,
+    "icon": "\ue750",
+    "keyExists": "jquery"
   }
 ]

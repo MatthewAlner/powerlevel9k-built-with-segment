@@ -7,6 +7,7 @@
     "@angular/core": "7.2.15",
     "grunt": "^1.0.4",
     "gulp": "^4.0.2",
+    "jquery": "^3.4.1",
     "typescript": "^3.4.5",
     "vue": "^2.6.10"
   },
