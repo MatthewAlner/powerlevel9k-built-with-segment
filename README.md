@@ -1,18 +1,20 @@
 # powerlevel9k-built-with-segment
 A "built with" segment for powerlevel9k, showing framework/language/library/build-tool icons.
 
+![example][powerlevel9k-built-with-segment]
+
 ## Installation
 
-this [powerlevel9k](https://github.com/bhilburn/powerlevel9k) segment is written in `bash` but does have a dependency having [jq](https://stedolan.github.io/jq/download/) installed
+this [powerlevel9k](https://github.com/bhilburn/powerlevel9k) segment is written in `bash` but does have a dependency on having [jq](https://stedolan.github.io/jq/download/) installed.
 
-just copy and paste the contents of `built-with-segment.sh` into your `.zshrc` or copy it to `$HOME` and source it from `.zshrc`
+Just copy and paste the contents of `built-with-segment.sh` into your `.zshrc` or copy it to `$HOME` and source it from `.zshrc`
 
 ```bash
 source ~/.built-with-segment.sh
 ZSH_THEME="powerlevel9k/powerlevel9k"
 ```
 
-you will also need to place `built-with-config.json` in your `$HOME` dir
+You will also need to place `built-with-config.json` in your `$HOME` dir
 
 ## Defining a new type of framework/language/library/build-tool
 
@@ -31,7 +33,7 @@ There are 7 keys that you can provide.
 * `showVersion` = if found should the version number be shown
   * (this only works if a `keyExists` is also provided)
 
-The three checks `keyExists`, `keyAbsent`, `fileExists` *if included* must all be true for the item to be found, see below for examples.
+The three checks `keyExists`, `keyAbsent`, `fileExists` **if included** must all be true for the item to be found, see below for examples.
 
 ## Examples
 
@@ -153,8 +155,8 @@ I had a few issues when using [powerlevel9k](https://github.com/bhilburn/powerle
 
 * Answer: check `keep background colours opaque` in Preferences > Profiles > Window
 
-
 [anuglar]: https://res.cloudinary.com/automattech/image/upload/v1559387150/powerlevel9k-built-with-segment/angular.png "Terminal showing angular cli"
 [2014-frontend]: https://res.cloudinary.com/automattech/image/upload/q_auto:best/v1559387150/powerlevel9k-built-with-segment/2014-frontend.png "Terminal showing 2014 frontend"
 [react]: https://res.cloudinary.com/automattech/image/upload/q_auto:best/v1559387150/powerlevel9k-built-with-segment/react.png "Terminal showing angular cli"
 [folder]: https://res.cloudinary.com/automattech/image/upload/q_auto:best/v1559387150/powerlevel9k-built-with-segment/folder.png "Terminal showing folder"
+[powerlevel9k-built-with-segment]: https://res.cloudinary.com/automattech/image/upload/q_auto:best/v1559394608/powerlevel9k-built-with-segment/powerlevel9k-built-with-segment.png "Terminal showing example icons"
