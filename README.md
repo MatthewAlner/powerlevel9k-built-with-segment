@@ -5,13 +5,45 @@ A "built with" segment for powerlevel9k, showing framework/language/library/buil
 
 ## Installation
 
-this [powerlevel9k](https://github.com/bhilburn/powerlevel9k) segment is written in `bash` but does have a dependency on having [jq](https://stedolan.github.io/jq/download/) installed.
+This [powerlevel9k](https://github.com/bhilburn/powerlevel9k) segment is written in `bash` but does have a dependency on having [jq](https://stedolan.github.io/jq/download/) installed.
 
-Just copy and paste the contents of `built-with-segment.sh` into your `.zshrc` or copy it to `$HOME` and source it from `.zshrc`
+### First Option
+
+- Copy and paste the contents of `built-with-segment.sh` into your `.zshrc`.
+- Restart your terminal to source the changes.
+- Intall dependency `brew update` and `brew install jq`.
+- Finally update your `POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS`.
+
+```bash
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(
+    nvm
+    custom_built_with // new line
+    background_jobs
+    ram
+)
+```
+
+
+### Second Option
+
+- Create a new file `$HOME/.built-with-segment.sh` and paste the code.
+- Add a line of code to your `.zshrc` to source the file.
 
 ```bash
 source ~/.built-with-segment.sh
 ZSH_THEME="powerlevel9k/powerlevel9k"
+```
+
+- Intall dependency `brew update` and `brew install jq`.
+- Finally update your `POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS`.
+
+```bash
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(
+    nvm
+    custom_built_with // new line
+    background_jobs
+    ram
+)
 ```
 
 You will also need to place `built-with-config.json` in your `$HOME` dir
