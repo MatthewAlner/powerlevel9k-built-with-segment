@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
-    "@angular/core": "7.2.15",
+    "@angular/core": "10.2.5",
     "grunt": "^1.0.4",
     "gulp": "^4.0.2",
     "jquery": "^3.4.1",
